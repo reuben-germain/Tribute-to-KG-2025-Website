@@ -155,3 +155,38 @@ h1, h2, h3 {
 .section {
     margin-bottom: 2em;
 }
+
+.symbol, .decor {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.symbol img, .decor {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0.5em;
+}
+
+.symbol figcaption {
+    font-size: 0.9em;
+    color: var(--purple);
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+blockquote {
+    border-left: 4px solid var(--green);
+    padding-left: 1em;
+    margin: 1.5em 0;
+    font-style: italic;
+    color: var(--purple);
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
