@@ -114,3 +114,10 @@ home img {
 }
 
 /* Footer Section */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--green);
+    color: var(--white);
+    /* margin-top: 2em; */
+}
