@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ancestral Tribute | Kent Germain</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2399cec8e4.js" crossorigin="anonymous"></script>
     <script>
         function toggleTheme() {
             document.body.classList.toggle('dark-theme');
@@ -12,14 +13,27 @@
     </script>
 </head>
 <body>
-    <header>
-        <nav>
+  <header>
+        <nav class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
             <a href="ancestral-tribute.html" class="active">Ancestral Tribute</a>
-            <button onclick="toggleTheme()" aria-label="Toggle dark/light theme">🌓</button>
+            <div class="dropdown">
+                <button class="dropbtn">Gallery
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Solo Pre-&-Post Rasta</a>
+                    <a href="#">Solo Rasta</a>
+                    <a href="#">Family Rasta</a>
+                    <a href="#">Family Post Rasta</a>
+                    <a href="#">Friends Rasta</a>
+                    <a href="#">Friends Post Rasta</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
+        <button onclick="toggleTheme()" aria-label="Toggle dark/light theme">🌓</button>
     </header>
 
     <main id="ancestral-tribute">
@@ -45,7 +59,10 @@
         <li>Echoed in Caribbean rhythms</li>
       </ul>
       <p>We inherit strength, dignity, and an unbreakable spirit.</p>
-      <img class="decor" src="imgs/bantu-pattern.jpg" alt="Bantu decorative pattern" />
+      <figure class="symbol">
+        <img class="decor" src="imgs/bantu-pattern.jpg" alt="Bantu decorative pattern" />
+        <figcaption>Hello Goodbye</figcaption>
+      </figure>
     </section>
 
     <section class="section">
@@ -114,5 +131,6 @@
   <footer>
     <p>&copy; 2025 Germain Family • In Loving Memory of Kent Germain</p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
