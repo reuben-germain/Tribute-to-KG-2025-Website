@@ -206,7 +206,7 @@ nav button {
 }
 
 /* Hero Section */
-home {
+.hero {
     background-size: cover;
     background-position: center;
     background-image: url('imgs/saint-joe.jpeg');
@@ -223,10 +223,10 @@ home {
     height: 100vh;
 }
 
-home img {
+.hero img {
     max-height: 100%;
-    max-width: 25%;
-    margin-top: 75px;
+    max-width: 45%;
+    margin-top: 30px;
     height: auto;
     border-radius: 50%;
     opacity: 0.5;
@@ -288,7 +288,7 @@ section p {
     margin: 1em 0;
     color: var(--grey);
 }
-#flag {
+.flag {
     width: 50%;
     height: auto;
     display: flex;
@@ -297,7 +297,7 @@ section p {
 }
 
 @media screen and (max-width: 600px) {
-    #flag {
+    .flag {
         width: 90%;
         height: auto;
     }
